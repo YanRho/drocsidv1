@@ -19,7 +19,7 @@ const SetupPage = async () => {
 
       // if hte server exists, redirect to the server page
     if (server) {
-        return redirect("/servers/${server.id");
+        return redirect(`/servers/${server.id}`);
     }
 
     return <InitialModal/>
