@@ -33,7 +33,7 @@ export const ServerSearch = ({ data }: ServerSearchProps) => {
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
-      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+      if (e.key.toLowerCase() === "k" && (e.metaKey || e.ctrlKey)) {
         console.log("Ctrl + K pressed");
         e.preventDefault();
         setOpen((open) => !open);
